@@ -1,0 +1,52 @@
+/* ==========================================================================
+   1. ESTADO INICIAL (Campos inactivos al cargar la página)
+   ========================================================================== */
+input[type="text"],
+input[type="password"] {
+    /* Borde delgado y de color gris claro especificado */
+    border: 1px solid #cccccc; 
+    
+    /* Propiedades de estructura y diseño limpio */
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+    /* Remueve el anillo de borde por defecto que los navegadores ponen en el foco */
+    outline: none; 
+}
+
+/* ==========================================================================
+   2. COMPORTAMIENTO INTERACTIVO (Campos en estado de Foco)
+   ========================================================================== */
+/* Funciona instantáneamente al hacer clic o navegar con el teclado (Tab) */
+input[type="text"]:focus,
+input[type="password"]:focus {
+    /* Grosor notable de 2px y color azul vibrante especificado */
+    border: 2px solid #007BFF; 
+    
+    /* Compensación para evitar que el texto o los elementos de abajo se muevan */
+    margin: -1px 0; 
+}
+
+/* ==========================================================================
+   3. ESTILOS DEL BOTÓN (Incluyendo el estado Hover)
+   ========================================================================== */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s ease;
+}
+
+/* El botón cambia de tono sutilmente al pasar el mouse por encima */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
